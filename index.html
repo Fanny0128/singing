@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>呱呱的唱歌台</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style type="text/css">
+		p{
+			color:blue;
+			margin: 5px;
+			cursor: pointer;
+		}
+		p:hover{
+			background:skyblue;
+		}
+		.hika{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 10;
+			background: rgba(0,20,150,0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<p>歌曲介紹</p>
+	<h1>Traveling</h1>
+	<div class="hika">
+		<img src="images.jpg">
+	</div>
+
+	<script type="text/javascript">
+		$("p").click(function(){
+			$(".hika").slideToggle();
+		});
+		$("img").click(function(){
+			$(".hika").slideToggle();
+		});
+</script>
+</body>
+</html>
